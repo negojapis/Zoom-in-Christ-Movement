@@ -436,16 +436,8 @@ main { overflow-x: clip; }
   pointer-events: none;
 }
 .marble-band .wrap { position: relative; }
-.footer { flex-wrap: wrap; padding-block: .6rem; }
-.footer-copy {
-  margin: 0;
-  font-size: clamp(.78rem, 1.25vw, .92rem);
-  font-weight: 700;
-  text-align: center;
-}
 .marble-band nav a:not(.nav-cta),
-.marble-footer .footer-actions > :is(a, button),
-.marble-footer .footer-copy {
+.marble-footer .footer-actions > :is(a, button) {
   color: #fff;
   -webkit-text-stroke: 2.5px var(--ink);
   paint-order: stroke fill;
@@ -455,10 +447,6 @@ main { overflow-x: clip; }
 .marble-footer .footer-actions > :is(a, button):focus-visible {
   outline-color: #fff;
   box-shadow: 0 0 0 3px var(--ink);
-}
-@media (max-width: 640px) {
-  .footer { justify-content: space-between; }
-  .footer-copy { order: 3; width: 100%; text-align: center; margin-top: .25rem; }
 }
 @media (max-width: 450px) {
   .marble-band .wrap { gap: .4rem; }
